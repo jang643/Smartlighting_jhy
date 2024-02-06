@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SunLightActivity"
+android:id="@+id/parent_layout">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tab_button"
+        android:layout_width="46dp"
+        android:layout_height="34dp"
+        android:background="@drawable/tab"
+        app:backgroundTint="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@null" />
+
+    <Switch
+        android:id="@+id/sunriseswitch"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:background="@color/btngreen"
+        android:padding="16dp"
+        android:text="Sunrise Light Setting"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tab_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Switch
+        android:id="@+id/sunsetswitch"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:background="@color/btngreen"
+        android:padding="16dp"
+        android:text="Sunset Light Setting"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/sunriseswitch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+    />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

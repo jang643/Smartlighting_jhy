@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <Button
+        android:id="@+id/color_setting_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="색상 설정"
+        android:textColor="@color/black"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        />
+
+    <Button
+        android:id="@+id/brightness_setting_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="선호 조도 설정"
+        android:textColor="@color/black"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        />
+
+    <Button
+        android:id="@+id/lights_delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="조명 삭제"
+        android:textColor="@color/black"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp" />
+
+
+
+</LinearLayout>
